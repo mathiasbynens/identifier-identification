@@ -1,4 +1,4 @@
-/*! http://mths.be/identifier v0.1.0 by @mathias */
+/*! http://mths.be/identifier v0.1.1 by @mathias */
 // Prollyfill for the identifier identification strawman (Oct 10, 2013 draft)
 // http://wiki.ecmascript.org/doku.php?id=strawman:identifier_identification
 ;(function(root, undefined) {
