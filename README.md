@@ -1,6 +1,6 @@
 # JavaScript identifier identification [![Build status](https://travis-ci.org/mathiasbynens/identifier-identification.png?branch=master)](https://travis-ci.org/mathiasbynens/identifier-identification) [![Dependency status](https://gemnasium.com/mathiasbynens/identifier-identification.png)](https://gemnasium.com/mathiasbynens/identifier-identification)
 
-A JavaScript prollyfill for [the proposed `String.isIdentifierStart` and `String.isIdentifierPart` methods](http://wiki.ecmascript.org/doku.php?id=strawman:identifier_identification), based on the March 8, 2013 draft of the strawman.
+A JavaScript prollyfill for [the proposed `String.isIdentifierStart` and `String.isIdentifierPart` methods](http://wiki.ecmascript.org/doku.php?id=strawman:identifier_identification), based on the October 10, 2013 draft of the strawman.
 
 Feel free to fork if you see possible improvements!
 

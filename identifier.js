@@ -1,5 +1,5 @@
 /*! http://mths.be/identifier v0.1.0 by @mathias */
-// Prollyfill for the identifier identification strawman (March 8, 2013 draft)
+// Prollyfill for the identifier identification strawman (Oct 10, 2013 draft)
 // http://wiki.ecmascript.org/doku.php?id=strawman:identifier_identification
 ;(function(root, undefined) {
 
@@ -49,20 +49,7 @@
 
 	/*--------------------------------------------------------------------------*/
 
-	var getUnicodeVersion = function(edition) {
-		if (edition === undefined || edition == 6) {
-			return 5.1; // Unicode v5.1.0
-		}
-		if (edition == 3 || edition == 5) {
-			return 3; // Unicode v3.0.0
-		}
-		if (!isNumber(edition)) {
-			throw TypeError();
-		}
-		throw RangeError();
-	};
-
-	var factory = function(step11) {
+	var factory = function(step12) {
 		return function(value, edition) {
 			var codePoint;
 			var unicode;
@@ -114,13 +101,18 @@
 				unicode = 6.3; // Unicode v6.3.0
 			}
 
-			// Step 11
+			// Step 11 is implied by the rest of our code
+			// if (edition === undefined) {
+			// 	edition = 6;
+			// }
+
+			// Step 12
 			// here be magic
-			if (step11(codePoint, unicode)) {
+			if (step12(codePoint, unicode)) {
 				return true;
 			}
 
-			// Step 12
+			// Step 13
 			return false;
 		};
 	};
