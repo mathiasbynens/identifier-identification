@@ -1,4 +1,4 @@
-# JavaScript identifier identification [![Build status](https://travis-ci.org/mathiasbynens/identifier-identification.png?branch=master)](https://travis-ci.org/mathiasbynens/identifier-identification) [![Dependency status](https://gemnasium.com/mathiasbynens/identifier-identification.png)](https://gemnasium.com/mathiasbynens/identifier-identification)
+# JavaScript identifier identification [![Build status](https://travis-ci.org/mathiasbynens/identifier-identification.svg?branch=master)](https://travis-ci.org/mathiasbynens/identifier-identification) [![Dependency status](https://gemnasium.com/mathiasbynens/identifier-identification.svg)](https://gemnasium.com/mathiasbynens/identifier-identification)
 
 A JavaScript prollyfill for [the proposed `String.isIdentifierStart` and `String.isIdentifierPart` methods](http://wiki.ecmascript.org/doku.php?id=strawman:identifier_identification), based on the October 10, 2013 draft of the strawman.
 
@@ -60,7 +60,7 @@ If the second, optional, `edition` parameter is omitted, `String.isIdentifierSta
 
 ## Author
 
-| [![twitter/mathias](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/mathias "Follow @mathias on Twitter") |
+| [![twitter/mathias](https://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |
 |---|
 | [Mathias Bynens](http://mathiasbynens.be/) |
 
