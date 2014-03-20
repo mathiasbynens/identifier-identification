@@ -43,13 +43,13 @@
 		"generate-data": "node scripts/generate-data.js",
 		"build": "npm run-script generate-data; grunt template"
 	},
-	"dependencies": {},
 	"devDependencies": {
+		"grunt": "~0.4.4",
+		"grunt-template": "~0.2.3",
+		"jsesc": "~0.4.3",
 		"regenerate": "~0.5.4",
-		"unicode-3.0.0": "~0.1.1",
-		"unicode-5.1.0": "~0.1.1",
-		"unicode-6.3.0": "~0.1.1",
-		"grunt": "~0.4.1",
-		"grunt-template": "~0.2.0"
+		"unicode-3.0.0": "~0.1.2",
+		"unicode-5.1.0": "~0.1.2",
+		"unicode-6.3.0": "~0.1.2"
 	}
 }
