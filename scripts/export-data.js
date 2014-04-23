@@ -1,6 +1,6 @@
-var jsesc = require('jsesc');
-var regenerate = require('regenerate');
+var _ = require('lodash');
 var fs = require('fs');
+var jsesc = require('jsesc');
 
 var escapeData = function(data) {
 	return jsesc(data, {
@@ -14,7 +14,7 @@ var readJSON = function(fileName) {
 	var contents = fs.readFileSync('data/' + fileName + '.json', 'utf-8');
 	var codePoints = JSON.parse(contents);
 	if (commonCodePoints.length) {
-		commonCodePoints = regenerate.intersection(commonCodePoints, codePoints);
+		commonCodePoints = _.intersection(commonCodePoints, codePoints);
 	} else {
 		commonCodePoints = codePoints;
 	}
@@ -29,9 +29,9 @@ var Unicode63ES6Start = readJSON('es-6-unicode-6.3.0-start');
 var commonStart = commonCodePoints.slice(0);
 
 // Remove common `IdentifierStart` code points from the individual sets
-Unicode3ES5Start = regenerate.difference(Unicode3ES5Start, commonStart);
-Unicode51ES6Start = regenerate.difference(Unicode51ES6Start, commonStart);
-Unicode63ES6Start = regenerate.difference(Unicode63ES6Start, commonStart);
+Unicode3ES5Start = _.difference(Unicode3ES5Start, commonStart);
+Unicode51ES6Start = _.difference(Unicode51ES6Start, commonStart);
+Unicode63ES6Start = _.difference(Unicode63ES6Start, commonStart);
 
 // Load `IdentifierPart` data, keeping track of the common code points
 commonCodePoints = [];
@@ -41,9 +41,9 @@ var Unicode63ES6Part = readJSON('es-6-unicode-6.3.0-part-only');
 var commonPart = commonCodePoints;
 
 // Remove common `IdentifierPart` code points from the individual sets
-Unicode3ES5Part = regenerate.difference(Unicode3ES5Part, commonPart);
-Unicode51ES6Part = regenerate.difference(Unicode51ES6Part, commonPart);
-Unicode63ES6Part = regenerate.difference(Unicode63ES6Part, commonPart);
+Unicode3ES5Part = _.difference(Unicode3ES5Part, commonPart);
+Unicode51ES6Part = _.difference(Unicode51ES6Part, commonPart);
+Unicode63ES6Part = _.difference(Unicode63ES6Part, commonPart);
 
 // Export the data
 module.exports = {

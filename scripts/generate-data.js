@@ -1,6 +1,6 @@
-var regenerate = require('regenerate');
-var jsesc = require('jsesc');
 var fs = require('fs');
+var jsesc = require('jsesc');
+var regenerate = require('regenerate');
 
 var unicodeVersions = [
 	'3.0.0',
