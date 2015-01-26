@@ -37,7 +37,7 @@ var generateES5Data = function(version) { // ES 3 or ES 5.1
 	var Nd = get('categories/Nd');
 	var Pc = get('categories/Pc');
 
-	// http://mathiasbynens.be/notes/javascript-identifiers#valid-identifier-names
+	// https://mathiasbynens.be/notes/javascript-identifiers#valid-identifier-names
 	var identifierStart = regenerate('$', '_')
 		.add(Lu, Ll, Lt, Lm, Lo, Nl)
 		.removeRange(0x010000, 0x10FFFF); // remove astral symbols

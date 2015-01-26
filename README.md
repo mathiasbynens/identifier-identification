@@ -12,13 +12,13 @@ In a browser:
 <script src="identifier.js"></script>
 ```
 
-Via [npm](http://npmjs.org/):
+Via [npm](https://www.npmjs.com/):
 
 ```bash
 npm install identifier-identification
 ```
 
-Then, in [Node.js](http://nodejs.org/):
+Then, in [Node.js](https://nodejs.org/):
 
 ```js
 require('identifier-identification');
@@ -54,7 +54,7 @@ String.isIdentifierPart(0x2FA1D, 6);
 
 ## Notes
 
-In order to make this polyfill ES3/ES5-compatible, this script includes [a `String.prototype.codePointAt` polyfill](http://mths.be/codepointat).
+In order to make this polyfill ES3/ES5-compatible, this script includes [a `String.prototype.codePointAt` polyfill](https://mths.be/codepointat).
 
 If the second, optional, `edition` parameter is omitted, `String.isIdentifierStart` and `String.isIdentifierPart` are supposed to return `true` if the current engine supports it as such, and `false` otherwise (as per the proposal in the strawman). Because this is a polyfill for use in older ECMAScript environments, I’ve decided to use the ECMAScript 6 definition for identifiers and the latest available Unicode version data to determine the result instead. In a proper ES6 environment, `String.isIdentifierPart(0x2FA1D)` is always `true` — without violating the strawman, this polyfill could never return that result in a non-ES6 environment, which didn’t seem very useful.
 
@@ -62,8 +62,8 @@ If the second, optional, `edition` parameter is omitted, `String.isIdentifierSta
 
 | [![twitter/mathias](https://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |
 |---|
-| [Mathias Bynens](http://mathiasbynens.be/) |
+| [Mathias Bynens](https://mathiasbynens.be/) |
 
 ## License
 
-This polyfill is available under the [MIT](http://mths.be/mit) license.
+This polyfill is available under the [MIT](https://mths.be/mit) license.

@@ -2,7 +2,7 @@
   "name": "identifier-identification",
   "version": "0.1.1",
   "description": "A JavaScript prollyfill for the proposed `String.isIdentifierStart` and `String.isIdentifierPart` methods.",
-  "homepage": "http://mths.be/identifier",
+  "homepage": "https://mths.be/identifier",
   "main": "identifier.js",
   "keywords": [
     "es6",
@@ -17,12 +17,12 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://mths.be/mit"
+      "url": "https://mths.be/mit"
     }
   ],
   "author": {
     "name": "Mathias Bynens",
-    "url": "http://mathiasbynens.be/"
+    "url": "https://mathiasbynens.be/"
   },
   "repository": {
     "type": "git",
@@ -44,13 +44,13 @@
     "build": "npm run-script generate-data; grunt template"
   },
   "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-template": "~0.2.3",
-    "jsesc": "~0.4.3",
+    "grunt": "^0.4.5",
+    "grunt-template": "^0.2.3",
+    "jsesc": "^0.5.0",
     "lodash": "^2.4.1",
-    "unicode-3.0.0": "~0.1.2",
-    "unicode-5.1.0": "~0.1.2",
-    "unicode-6.3.0": "~0.1.2",
-    "regenerate": "^0.6.0"
+    "unicode-3.0.0": "^0.1.5",
+    "unicode-5.1.0": "^0.1.5",
+    "unicode-6.3.0": "^0.1.5",
+    "regenerate": "^1.2.1"
   }
 }

@@ -1,4 +1,4 @@
-/*! http://mths.be/identifier v<%= version %> by @mathias */
+/*! https://mths.be/identifier v<%= version %> by @mathias */
 // Prollyfill for the identifier identification strawman (Oct 10, 2013 draft)
 // http://wiki.ecmascript.org/doku.php?id=strawman:identifier_identification
 ;(function(root, undefined) {
@@ -16,7 +16,7 @@
 
 	/*--------------------------------------------------------------------------*/
 
-	/*! http://mths.be/codepointat v0.1.0 by @mathias */
+	/*! https://mths.be/codepointat v0.1.0 by @mathias */
 	if (!String.prototype.codePointAt) {
 		(function() {
 			'use strict'; // needed to support `apply`/`call` with `undefined`/`null`
@@ -53,7 +53,7 @@
 				) {
 					second = string.charCodeAt(index + 1);
 					if (second >= 0xDC00 && second <= 0xDFFF) { // low surrogate
-						// http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+						// https://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
 						return (first - 0xD800) * 0x400 + second - 0xDC00 + 0x10000;
 					}
 				}
